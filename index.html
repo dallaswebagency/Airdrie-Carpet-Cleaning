@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airdrie Carpet Cleaning | Carpet, Upholstery, Furnace &amp; Duct Cleaning in Airdrie, Calgary, Cochrane &amp; Crossfield</title>
+<meta name="description" content="Professional carpet cleaning in Airdrie, Calgary, Cochrane and Crossfield. Residential and commercial carpet, upholstery, furnace and duct, and vehicle cleaning. Call 403-990-5101.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Figtree:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#203080;
+  --navy-deep:#111a4d;
+  --red:#c02038;
+  --red-dark:#9c1a2e;
+  --paper:#f6f3ee;
+  --paper-2:#ebe6dd;
+  --ink:#14183a;
+  --muted:#5b5f7a;
+  --white:#fff;
+  --line:rgba(20,24,58,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.display{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:800;letter-spacing:-.02em;line-height:.98;text-transform:uppercase}
+.script{font-family:'Yellowtail',cursive;font-weight:400;text-transform:none;letter-spacing:0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:800;font-size:15px;letter-spacing:.04em;text-transform:uppercase;border:2px solid transparent;transition:transform .2s,background .2s,color .2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:#fff}
+.btn-white{background:#fff;color:var(--navy)}
+
+/* top strip */
+.strip{background:var(--navy-deep);color:#d9ddf5;font-size:14px}
+.strip .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.strip b{color:#fff}
+.strip a:hover{color:#fff;text-decoration:underline}
+
+/* header */
+header.top{background:var(--paper);position:sticky;top:0;z-index:50;border-bottom:3px solid var(--navy)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 0}
+.brand img{height:62px;width:auto}
+nav.main{display:flex;gap:30px;align-items:center}
+nav.main a{font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:700;text-transform:uppercase;font-size:14px;letter-spacing:.06em;position:relative;padding:6px 0}
+nav.main a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--red);transition:width .25s}
+nav.main a:not(.btn):hover::after{width:100%}
+.burger{display:none;background:none;border:2px solid var(--navy);padding:8px 12px;font-family:'Archivo',sans-serif;font-weight:800;font-size:13px;letter-spacing:.06em;color:var(--navy);cursor:pointer}
+
+/* hero */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background:var(--navy-deep);clip-path:polygon(0 0,46% 0,34% 100%,0 100%);z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:0;min-height:640px}
+.hero-copy{padding:76px 40px 150px 0;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#ffd2d8}
+.eyebrow i{display:block;width:34px;height:3px;background:var(--red)}
+.hero h1{font-size:clamp(46px,6.4vw,92px);margin:20px 0 6px}
+.hero h1 .script{display:block;color:#ff7a8e;font-size:.8em;line-height:1;margin-top:6px;transform:rotate(-3deg);transform-origin:left}
+.hero p.lead{max-width:520px;font-size:19px;color:#dfe3fa;margin:22px 0 32px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero .areas{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap}
+.hero .areas span{border:1px solid rgba(255,255,255,.35);padding:5px 14px;font-size:14px;font-weight:600;letter-spacing:.04em}
+.hero-photo{position:relative;margin-right:calc((100vw - min(1200px,100vw - 40px))/-2)}
+.hero-photo .frame{position:absolute;inset:0;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero-photo .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,26,77,.35),transparent 40%)}
+.sticker{position:absolute;left:4%;bottom:170px;background:#fff;color:var(--navy);padding:14px 18px;border-left:6px solid var(--red);box-shadow:0 14px 30px rgba(0,0,0,.35);transform:rotate(-2.5deg);z-index:3;max-width:230px}
+.sticker b{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:900;font-size:34px;line-height:1;display:block;color:var(--red)}
+.sticker span{font-size:13.5px;font-weight:600;line-height:1.3;display:block;margin-top:4px}
+
+/* quote card overlapping hero */
+.quote-bar{position:relative;z-index:10;margin-top:-92px}
+.quote-card{background:#fff;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--red);display:grid;grid-template-columns:230px 1fr;}
+.quote-card .qhead{background:var(--ink);color:#fff;padding:24px 24px}
+.quote-card .qhead h2{font-size:30px;line-height:1}
+.quote-card .qhead p{font-size:14px;color:#c9cdea;margin-top:10px;line-height:1.4}
+.quote-card form{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:0;align-items:stretch}
+.field{padding:14px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
+.field label{font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select{border:0;outline:0;background:transparent;font:600 17px 'Figtree',sans-serif;color:var(--ink);padding:5px 0;width:100%}
+.field:focus-within{background:#fff4f5;box-shadow:inset 0 -4px 0 var(--red)}
+.quote-card button.btn{border-radius:0;font-size:16px;padding-inline:34px}
+.form-note{grid-column:1/-1;padding:10px 18px;font-size:14px;color:var(--navy);font-weight:600;background:#eef0fb;display:none}
+.form-note.show{display:block}
+
+/* proof */
+.proof{padding:96px 0 40px}
+.proof-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.proof h2{font-size:clamp(34px,4.4vw,56px);color:var(--navy)}
+.proof h2 .script{color:var(--red);font-size:1.05em}
+.proof p{margin-top:18px;max-width:560px;color:#33375a}
+.counts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;border-top:3px solid var(--ink)}
+.counts div{padding:16px 16px 6px 0}
+.counts b{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:900;font-size:46px;line-height:1;color:var(--red);display:block}
+.counts span{font-size:14px;font-weight:600;color:var(--muted);line-height:1.3;display:block;margin-top:6px}
+.badges{display:flex;gap:18px;justify-content:center;align-items:flex-start}
+.badge{background:#fff;padding:10px;border:1px solid var(--line);box-shadow:0 18px 40px rgba(17,26,77,.16);width:min(250px,44%)}
+.badge:nth-child(1){transform:rotate(-3deg) translateY(14px)}
+.badge:nth-child(2){transform:rotate(2.5deg)}
+.badge-cap{font-size:12.5px;color:var(--muted);text-align:center;margin-top:20px;font-weight:600;letter-spacing:.03em}
+
+/* services */
+.services{padding:60px 0 100px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.sec-head h2{font-size:clamp(34px,4.6vw,60px);color:var(--ink)}
+.sec-head h2 .script{color:var(--red)}
+.sec-head p{max-width:380px;color:var(--muted)}
+.svc{display:grid;grid-template-columns:.9fr 1.3fr;border:3px solid var(--ink);background:#fff}
+.svc-list{border-right:3px solid var(--ink);display:flex;flex-direction:column}
+.svc-tab{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:10px;padding:22px 24px;border-bottom:1px solid var(--line);transition:background .2s,color .2s;width:100%}
+.svc-tab:last-child{border-bottom:0}
+.svc-tab em{font:900 15px 'Archivo',sans-serif;font-style:normal;color:var(--red);letter-spacing:.06em}
+.svc-tab strong{font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:800;font-size:21px;text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}
+.svc-tab svg{width:20px;height:20px;transition:transform .2s}
+.svc-tab:hover{background:var(--paper)}
+.svc-tab[aria-selected="true"]{background:var(--navy);color:#fff}
+.svc-tab[aria-selected="true"] em{color:#ff9aa9}
+.svc-tab[aria-selected="true"] svg{transform:translateX(5px)}
+.svc-tab:focus-visible{outline:3px solid var(--red);outline-offset:-6px}
+.svc-panels{position:relative;min-height:520px}
+.panel{position:absolute;inset:0;display:none;grid-template-rows:1fr auto}
+.panel.on{display:grid;animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.panel .pic{position:relative;overflow:hidden;background:var(--navy-deep)}
+.panel .pic img{width:100%;height:100%;object-fit:cover}
+.panel .pic.plain{display:grid;place-items:center;background:
+  repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 18px),var(--navy)}
+.panel .pic.plain svg{width:46%;max-width:230px;color:#fff;opacity:.95}
+.panel .pic .tag{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:9px 18px}
+.panel .txt{padding:26px 30px 30px;background:#fff;border-top:3px solid var(--ink)}
+.panel h3{font-size:30px;color:var(--navy)}
+.panel p{margin-top:10px;color:#33375a;max-width:560px}
+.panel ul{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.panel li{background:var(--paper);padding:5px 12px;font-weight:600;font-size:14.5px;border-left:3px solid var(--red)}
+
+/* stains */
+.stains{background:var(--ink);color:#fff;padding:90px 0;position:relative;overflow:hidden}
+.stains-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:0;align-items:stretch}
+.stains-img{position:relative;min-height:460px}
+.stains-img img.a{position:absolute;left:0;top:0;width:80%;height:78%;object-fit:cover;border:6px solid #fff}
+.stains-img img.b{position:absolute;right:0;bottom:0;width:58%;height:52%;object-fit:cover;border:6px solid #fff;box-shadow:-10px 10px 0 var(--red)}
+.stains-img .pin{position:absolute;left:12%;top:60%;background:var(--red);color:#fff;font:800 13px 'Archivo',sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;transform:rotate(-4deg);z-index:2}
+.stains-copy{padding:20px 0 20px 70px;display:flex;flex-direction:column;justify-content:center}
+.stains-copy h2{font-size:clamp(34px,4.4vw,56px)}
+.stains-copy h2 .script{color:#ff7a8e}
+.stains-copy p{margin-top:18px;color:#cfd3ef;max-width:520px}
+.stain-list{list-style:none;margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid rgba(255,255,255,.25)}
+.stain-list li{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.25);font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;display:flex;align-items:center;gap:12px}
+.stain-list li::before{content:"";width:12px;height:12px;background:var(--red);border-radius:50%;flex:none}
+.equip{margin-top:28px;display:flex;gap:16px;align-items:center;background:rgba(255,255,255,.07);padding:16px 20px;border-left:5px solid var(--red)}
+.equip b{font-family:'Archivo',sans-serif;font-stretch:110%;text-transform:uppercase;font-size:18px;display:block}
+.equip span{font-size:15px;color:#cfd3ef}
+
+/* people */
+.people{padding:100px 0}
+.people-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+.photo-card{position:relative}
+.photo-card img.main{width:100%;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--ink)}
+.photo-card img.van{position:absolute;right:-24px;bottom:-34px;width:34%;border:5px solid #fff;box-shadow:8px 8px 0 var(--navy)}
+.people h2{font-size:clamp(32px,4vw,52px);color:var(--navy)}
+.people h2 .script{color:var(--red)}
+.people p{margin-top:16px;color:#33375a}
+.people .sign{margin-top:22px;font-size:46px;color:var(--red);line-height:1}
+
+/* reviews */
+.reviews{background:var(--paper-2);padding:90px 0;border-block:3px solid var(--ink)}
+.rev-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:26px;align-items:start}
+.rev{background:#fff;border:2px solid var(--ink);padding:28px 26px;position:relative}
+.rev:nth-child(1){grid-row:span 1;background:var(--navy);color:#fff;border-color:var(--navy)}
+.rev:nth-child(1) q{font-size:23px}
+.rev q{display:block;font-size:19px;line-height:1.45;font-weight:500;quotes:"\201C" "\201D"}
+.rev .by{margin-top:18px;font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
+.stars{color:#f2b01e;letter-spacing:3px;font-size:18px;margin-bottom:10px}
+.rev-foot{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* final cta */
+.final{padding:90px 0 110px}
+.final-box{background:var(--red);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;border:3px solid var(--ink);box-shadow:12px 12px 0 var(--navy);overflow:hidden}
+.final-box .l{padding:50px 48px}
+.final-box h2{font-size:clamp(34px,4.4vw,58px)}
+.final-box h2 .script{color:#fff;opacity:.95}
+.final-box p{margin-top:16px;max-width:460px;color:#ffe3e7}
+.final-box .btns{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.final-box .r{background:var(--navy-deep);padding:44px 40px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.final-box .r small{font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:#aab0e0}
+.final-box .r a.tel{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:900;font-size:clamp(30px,3.4vw,44px);line-height:1.1}
+.hours{margin-top:18px;border-top:1px solid rgba(255,255,255,.25)}
+.hours div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:15.5px}
+.hours div span:last-child{font-weight:700}
+
+/* footer */
+footer{background:var(--navy-deep);color:#c9cdea;padding:56px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px}
+.foot-grid .plate{background:#fff;display:inline-block;padding:8px 12px}
+.foot-grid .plate img{height:54px}
+.foot-grid p{margin-top:16px;font-size:15px;max-width:290px}
+footer h4{font-family:'Archivo',sans-serif;font-stretch:110%;text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:#fff;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{margin:8px 0;font-size:15.5px}
+footer a:hover{color:#fff;text-decoration:underline}
+.legal{border-top:1px solid rgba(255,255,255,.15);padding:18px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+.legal a{color:#fff;font-weight:700;border-bottom:2px solid var(--red)}
+
+/* mobile call bar */
+.callbar{display:none}
+
+@media (max-width:1020px){
+  .hero::before{clip-path:none;height:50%}
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding:56px 0 30px}
+  .hero-photo{margin:0 -20px;height:360px}
+  .hero-photo .frame{clip-path:polygon(0 8%,100% 0,100% 100%,0 100%)}
+  .sticker{left:auto;right:18px;bottom:auto;top:28px}
+  .quote-bar{margin-top:-40px}
+  .quote-card{grid-template-columns:1fr}
+  .quote-card form{grid-template-columns:1fr 1fr}
+  .quote-card form .btn{grid-column:1/-1;justify-content:center;padding-block:18px}
+  .field{border-bottom:1px solid var(--line)}
+  .proof-grid,.stains-grid,.people-grid,.final-box{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr}
+  .svc-list{border-right:0;border-bottom:3px solid var(--ink)}
+  .svc-panels{min-height:0}
+  .panel{position:static}
+  .panel .pic{height:280px}
+  .stains-copy{padding:40px 0 0}
+  .stains-img{min-height:380px}
+  .rev-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .photo-card img.van{right:-6px}
+  .people-grid{gap:56px}
+}
+@media (max-width:760px){
+  body{font-size:16px;padding-bottom:64px}
+  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--paper);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;border-bottom:3px solid var(--navy);display:none}
+  nav.main.open{display:flex}
+  nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}
+  nav.main a.btn{margin-top:14px;justify-content:center;border:0}
+  .burger{display:block}
+  .brand img{height:52px}
+  .strip .wrap{justify-content:center;text-align:center}
+  .strip .hrs{display:none}
+  .quote-card form{grid-template-columns:1fr}
+  .counts{grid-template-columns:1fr 1fr 1fr}
+  .counts b{font-size:34px}
+  .foot-grid{grid-template-columns:1fr}
+  .final-box .l,.final-box .r{padding:34px 26px}
+  .stain-list{grid-template-columns:1fr}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;border-top:3px solid var(--ink)}
+  .callbar a{padding:16px;text-align:center;font:800 14px 'Archivo',sans-serif;letter-spacing:.06em;text-transform:uppercase}
+  .callbar a:first-child{background:var(--red);color:#fff}
+  .callbar a:last-child{background:#fff;color:var(--navy)}
+  .svc-tab{padding:18px 18px}
+  .svc-tab strong{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>Airdrie</b> · Calgary · Cochrane · Crossfield</span>
+    <span class="hrs">Mon–Fri 8 AM–7 PM · Sat 8 AM–4 PM · Sun closed</span>
+    <a href="tel:4039905101"><b>403-990-5101</b></a>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Airdrie Carpet Cleaning home"><img src="assets/logo.png" alt="Airdrie Carpet Cleaning.com" width="587" height="175"></a>
+    <button class="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#coupons">Coupons</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-red" href="#quote">Get A Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><i></i>Airdrie, Calgary, Cochrane &amp; Crossfield</span>
+      <h1 class="display">Professional<br>Carpet Cleaning<span class="script">done right.</span></h1>
+      <p class="lead">Truck-mounted steam cleaning for homes, offices and vehicles, plus furnace and duct cleaning. Over 42 years of combined experience.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="#quote">Get A Free Quote</a>
+        <a class="btn btn-white" href="tel:4039905101">Call 403-990-5101</a>
+      </div>
+      <div class="areas"><span>Residential</span><span>Commercial</span><span>Upholstery</span><span>Furnace &amp; Duct</span><span>Vehicle</span></div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="assets/team.jpg" alt="Steve and Kelsey of Airdrie Carpet Cleaning standing in front of their service vans holding award trophies"></div>
+      <div class="sticker"><b>Gold</b><span>Best Carpet Cleaner &amp; Best Furnace Cleaner, Best of Airdrie 2026</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-bar" id="quote">
+  <div class="wrap">
+    <div class="quote-card">
+      <div class="qhead">
+        <h2 class="display">Free<br>quote</h2>
+        <p>Tell us what needs cleaning and we will get back to you.</p>
+      </div>
+      <form id="quoteForm" novalidate>
+        <div class="field"><label for="qn">Your name</label><input id="qn" name="name" type="text" autocomplete="name" placeholder="Full name" required></div>
+        <div class="field"><label for="qp">Phone</label><input id="qp" name="phone" type="tel" autocomplete="tel" placeholder="403-000-0000" required></div>
+        <div class="field"><label for="qs">What needs cleaning?</label>
+          <select id="qs" name="service">
+            <option>Residential carpet</option>
+            <option>Commercial carpet</option>
+            <option>Upholstery</option>
+            <option>Furnace / duct</option>
+            <option>Vehicle</option>
+          </select>
+        </div>
+        <button class="btn btn-red" type="submit">Request quote</button>
+        <div class="form-note" id="formNote" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="proof" id="about">
+  <div class="wrap proof-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--red)"><i></i>Why Airdrie picks us</span>
+      <h2 class="display" style="margin-top:14px">Voted <span class="script">Best of Airdrie</span> again</h2>
+      <p>We are an award-winning floor care provider with over 42 years of combined experience. In 2026 Airdrie City View readers voted us Gold for both Best Carpet Cleaner and Best Furnace Cleaner.</p>
+      <div class="counts">
+        <div><b>15</b><span>Golds &amp; 3 Silvers, Best Carpet Cleaning</span></div>
+        <div><b>9</b><span>Golds, 8 Silvers &amp; 1 Bronze, Best Furnace Cleaning</span></div>
+        <div><b>42+</b><span>Years of combined experience</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="badges">
+        <div class="badge"><img src="assets/award-carpet.jpg" alt="Gold, City View Airdrie 2026 Readers' Choice Awards, Best Carpet Cleaner, Airdrie Carpet Cleaning" loading="lazy"></div>
+        <div class="badge"><img src="assets/award-furnace.jpg" alt="Gold, City View Airdrie 2026 Readers' Choice Awards, Best Furnace Cleaner, Airdrie Carpet Cleaning" loading="lazy"></div>
+      </div>
+      <p class="badge-cap" style="text-align:center;margin-left:auto;margin-right:auto">City View Airdrie · 2026 Readers' Choice Awards</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="display">Pick your <span class="script">job</span></h2>
+      <p>Five ways we can help. Choose one to see what is included.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-list" role="tablist" aria-label="Services">
+        <button class="svc-tab" role="tab" aria-selected="true" aria-controls="p1" id="t1"><em>01</em><strong>Residential carpet</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p2" id="t2"><em>02</em><strong>Commercial carpet</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p3" id="t3"><em>03</em><strong>Upholstery</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p4" id="t4"><em>04</em><strong>Furnace &amp; duct</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p5" id="t5"><em>05</em><strong>Vehicle</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <div class="svc-panels">
+        <article class="panel on" id="p1" role="tabpanel" aria-labelledby="t1">
+          <div class="pic"><img src="assets/dog-carpet.jpg" alt="Muddy paw prints on a cream carpet" loading="lazy"><span class="tag">Residential</span></div>
+          <div class="txt"><h3 class="display">Residential carpet</h3><p>Steam cleaning for the carpets, furniture, mattresses, mats and rugs in your home, with furnace and duct cleaning available too.</p>
+          <ul><li>Furniture</li><li>Mattresses</li><li>Mats</li><li>Rugs</li><li>Furnace &amp; duct</li></ul></div>
+        </article>
+        <article class="panel" id="p2" role="tabpanel" aria-labelledby="t2">
+          <div class="pic"><img src="assets/office.jpg" alt="Clean grey carpet in a bright modern office" loading="lazy" style="object-position:62% 50%"><span class="tag">Commercial</span></div>
+          <div class="txt"><h3 class="display">Commercial carpet</h3><p>Steam cleaning for office carpets, chairs and partition dividers, plus deep cleaning for your high-traffic areas.</p>
+          <ul><li>Office carpets</li><li>Chairs</li><li>Partition dividers</li><li>High-traffic areas</li></ul></div>
+        </article>
+        <article class="panel" id="p3" role="tabpanel" aria-labelledby="t3">
+          <div class="pic"><img src="assets/white-dog.jpg" alt="White dog resting on clean carpet" loading="lazy" style="object-position:40% 50%"><span class="tag">Upholstery</span></div>
+          <div class="txt"><h3 class="display">Upholstery</h3><p>Upholstery and furniture cleaning that lifts everyday stains like coffee, wine, pet urine and grease.</p>
+          <ul><li>Couches</li><li>Chairs</li><li>Furniture</li><li>Pet stains</li></ul></div>
+        </article>
+        <article class="panel" id="p4" role="tabpanel" aria-labelledby="t4">
+          <div class="pic plain"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="52" height="40" rx="3"/><path d="M14 22h36M14 30h36M14 38h36M14 46h20"/></svg><span class="tag">Furnace &amp; duct</span></div>
+          <div class="txt"><h3 class="display">Furnace &amp; duct</h3><p>Furnace and air duct cleaning from the team voted Best Furnace Cleaner in Airdrie by City View readers in 2026.</p>
+          <ul><li>Furnace cleaning</li><li>Air duct cleaning</li><li>Gold, Best of Airdrie 2026</li></ul></div>
+        </article>
+        <article class="panel" id="p5" role="tabpanel" aria-labelledby="t5">
+          <div class="pic"><img src="assets/van.jpg" alt="Airdrie Carpet Cleaning service van parked on a residential street" loading="lazy"><span class="tag">Vehicle</span></div>
+          <div class="txt"><h3 class="display">Vehicle</h3><p>Steam cleaning for vehicle carpet and upholstery, from cars to RVs, boats and buses, at homes and offices.</p>
+          <ul><li>Vehicle carpet</li><li>Vehicle upholstery</li><li>RVs</li><li>Boats</li><li>Buses</li></ul></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stains" id="gallery">
+  <div class="wrap stains-grid">
+    <div class="stains-img">
+      <img class="a" src="assets/dog-carpet.jpg" alt="Cream carpet with muddy paw prints" loading="lazy" style="object-position:50% 80%">
+      <span class="pin">Muddy paws? No problem</span>
+      <img class="b" src="assets/white-dog.jpg" alt="White dog resting on soft clean carpet" loading="lazy" style="object-position:30% 50%">
+    </div>
+    <div class="stains-copy">
+      <h2 class="display">Deep clean, <span class="script">faster dry</span></h2>
+      <p>Our truck-mounted equipment gets deeper into the carpet and helps it dry faster. Stain removal for the usual suspects:</p>
+      <ul class="stain-list"><li>Coffee</li><li>Wine</li><li>Pet urine</li><li>Grease</li></ul>
+      <div class="equip"><div><b>Truck-mounted equipment</b><span>Deeper cleaning and faster drying.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="people">
+  <div class="wrap people-grid">
+    <div class="photo-card">
+      <img class="main" src="assets/van.jpg" alt="Airdrie Carpet Cleaning branded van parked on a residential street" loading="lazy">
+      <img class="van" src="assets/team-crop.jpg" alt="Steve and Kelsey holding their Best of Airdrie awards" loading="lazy">
+    </div>
+    <div>
+      <span class="eyebrow" style="color:var(--red)"><i></i>The people behind the van</span>
+      <h2 class="display" style="margin-top:14px">The father daughter duo <span class="script">you can call</span></h2>
+      <p>Steve, Kelsey and the team are known around town as Airdrie Carpet Cleaning. Fast service, friendly people, and a long run of local awards.</p>
+      <p>Over 42 years of combined experience, in every home, office and vehicle we clean.</p>
+      <div class="sign script">Steve, Kelsey &amp; the Team</div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="coupons">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="display">Neighbours <span class="script">say it best</span></h2>
+      <p>Real feedback from Airdrie-area customers.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><q>Excellent job! Fast service and the most friendly personnel.</q><div class="by">Justin L.</div></div>
+      <div class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><q>Quick response and fair pricing for cleaning two couches.</q><div class="by">Brandy B.</div></div>
+      <div class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><q>Scheduled cleaning went great. I would book again.</q><div class="by">Marianne H.</div></div>
+    </div>
+    <div class="rev-foot">
+      <a class="btn btn-red" href="https://g.page/airdriecarpetcleaning/review" target="_blank" rel="noopener">Leave a Google review</a>
+      <a class="btn btn-line" href="https://www.facebook.com/AirdrieCarpetCleaning" target="_blank" rel="noopener">Find us on Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="contact">
+  <div class="wrap">
+    <div class="final-box">
+      <div class="l">
+        <h2 class="display">Ready for <span class="script">clean carpets?</span></h2>
+        <p>Get a free quote for carpet, upholstery, furnace and duct, or vehicle cleaning anywhere in Airdrie, Calgary, Cochrane and Crossfield.</p>
+        <div class="btns"><a class="btn btn-white" href="#quote">Get A Free Quote</a><a class="btn btn-line" style="border-color:#fff;color:#fff" href="tel:4039905101">403-990-5101</a></div>
+      </div>
+      <div class="r">
+        <small>Call us</small>
+        <a class="tel" href="tel:4039905101">403-990-5101</a>
+        <div class="hours">
+          <div><span>Monday to Friday</span><span>8 AM – 7 PM</span></div>
+          <div><span>Saturday</span><span>8 AM – 4 PM</span></div>
+          <div><span>Sunday</span><span>Closed</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="plate" href="#top"><img src="assets/logo.png" alt="Airdrie Carpet Cleaning.com"></a>
+        <p>Professional carpet cleaning for Airdrie, Calgary, Cochrane and Crossfield.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul><li>Residential carpet</li><li>Commercial carpet</li><li>Upholstery</li><li>Furnace &amp; duct</li><li>Vehicle</li></ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#about">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#coupons">Coupons</a></li><li><a href="#contact">Contact</a></li><li><a href="#quote">Get A Quote</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:4039905101">403-990-5101</a></li><li>Mon–Fri 8 AM–7 PM</li><li>Sat 8 AM–4 PM</li><li><a href="https://www.facebook.com/AirdrieCarpetCleaning" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://g.page/airdriecarpetcleaning/review" target="_blank" rel="noopener">Google review</a></li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Airdrie Carpet Cleaning. All rights reserved.</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:4039905101">Call now</a><a href="#quote">Free quote</a></div>
+
+<script>
+// services tabs
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.svc-tab'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  function show(i){
+    tabs.forEach(function(t,k){t.setAttribute('aria-selected',k===i?'true':'false');t.tabIndex=k===i?0:-1});
+    panels.forEach(function(p,k){p.classList.toggle('on',k===i)});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(i)});
+    t.addEventListener('keydown',function(e){
+      if(e.key==='ArrowDown'||e.key==='ArrowRight'){e.preventDefault();var n=(i+1)%tabs.length;show(n);tabs[n].focus()}
+      if(e.key==='ArrowUp'||e.key==='ArrowLeft'){e.preventDefault();var n=(i-1+tabs.length)%tabs.length;show(n);tabs[n].focus()}
+    });
+  });
+  show(0);
+})();
+// mobile menu
+(function(){
+  var b=document.querySelector('.burger'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+})();
+// quote form (front-end only: connect to the live site's quote handler or form service before launch)
+(function(){
+  var f=document.getElementById('quoteForm'),note=document.getElementById('formNote');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=f.name.value.trim(),phone=f.phone.value.replace(/\D/g,'');
+    note.classList.add('show');
+    if(!name||phone.length<10){note.textContent='Please add your name and a phone number so we can reach you.';return}
+    note.textContent='Thanks '+name.split(' ')[0]+'. We will call you about '+f.service.value.toLowerCase()+' cleaning.';
+    f.reset();
+  });
+})();
+</script>
+</body>
+</html>
