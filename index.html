@@ -7,256 +7,281 @@
 <meta name="description" content="Professional carpet cleaning in Airdrie, Calgary, Cochrane and Crossfield. Residential and commercial carpet, upholstery, furnace and duct, and vehicle cleaning. Call 403-990-5101.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Figtree:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800;900&family=Barlow:wght@400;500;600;700&family=Graduate&family=Yellowtail&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#203080;
-  --navy-deep:#111a4d;
+  --navy-deep:#0e1642;
   --red:#c02038;
   --red-dark:#9c1a2e;
-  --paper:#f6f3ee;
-  --paper-2:#ebe6dd;
-  --ink:#14183a;
-  --muted:#5b5f7a;
-  --white:#fff;
-  --line:rgba(20,24,58,.14);
+  --cream:#f5efe2;
+  --cream-2:#ece3d0;
+  --ink:#10143a;
+  --gold:#d9a526;
+  --silver:#b9bfcc;
+  --bronze:#b5733a;
+  --muted:#575b78;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+body{font-family:'Barlow',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;font-size:18px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:repeating-linear-gradient(0deg,rgba(32,48,128,.035) 0 1px,transparent 1px 5px),repeating-linear-gradient(90deg,rgba(32,48,128,.03) 0 1px,transparent 1px 7px)}
+main,header,footer,.strip{position:relative;z-index:1}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
-.display{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:800;letter-spacing:-.02em;line-height:.98;text-transform:uppercase}
-.script{font-family:'Yellowtail',cursive;font-weight:400;text-transform:none;letter-spacing:0}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:800;font-size:15px;letter-spacing:.04em;text-transform:uppercase;border:2px solid transparent;transition:transform .2s,background .2s,color .2s;cursor:pointer}
-.btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red-dark)}
-.btn-line{border-color:var(--navy);color:var(--navy);background:transparent}
-.btn-line:hover{background:var(--navy);color:#fff}
-.btn-white{background:#fff;color:var(--navy)}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.varsity{font-family:'Graduate',serif;font-weight:400;text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+.cond{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.script{font-family:'Yellowtail',cursive;text-transform:none;letter-spacing:0;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:19px;letter-spacing:.08em;text-transform:uppercase;border:3px solid var(--ink);background:var(--red);color:#fff;box-shadow:5px 5px 0 var(--ink);transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--ink)}
+.btn.alt{background:#fff;color:var(--navy)}
+.btn.navy{background:var(--navy);color:#fff}
 
-/* top strip */
-.strip{background:var(--navy-deep);color:#d9ddf5;font-size:14px}
-.strip .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+/* top strip + header */
+.strip{background:var(--ink);color:#cfd3f2;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+.strip .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}
 .strip b{color:#fff}
-.strip a:hover{color:#fff;text-decoration:underline}
+header.top{position:sticky;top:0;z-index:60;background:var(--cream);border-bottom:4px solid var(--navy)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;padding:8px 0;gap:20px}
+.brand img{height:64px;width:auto}
+nav.main{display:flex;gap:28px;align-items:center}
+nav.main a:not(.btn){font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;letter-spacing:.1em;text-transform:uppercase;padding:4px 0;border-bottom:3px solid transparent;transition:border-color .2s,color .2s}
+nav.main a:not(.btn):hover{color:var(--red);border-color:var(--red)}
+nav.main .btn{padding:10px 20px;font-size:17px;box-shadow:4px 4px 0 var(--ink)}
+.burger{display:none;background:var(--navy);color:#fff;border:0;padding:10px 16px;font:800 16px 'Barlow Condensed',sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
 
-/* header */
-header.top{background:var(--paper);position:sticky;top:0;z-index:50;border-bottom:3px solid var(--navy)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 0}
-.brand img{height:62px;width:auto}
-nav.main{display:flex;gap:30px;align-items:center}
-nav.main a{font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:700;text-transform:uppercase;font-size:14px;letter-spacing:.06em;position:relative;padding:6px 0}
-nav.main a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--red);transition:width .25s}
-nav.main a:not(.btn):hover::after{width:100%}
-.burger{display:none;background:none;border:2px solid var(--navy);padding:8px 12px;font-family:'Archivo',sans-serif;font-weight:800;font-size:13px;letter-spacing:.06em;color:var(--navy);cursor:pointer}
+/* HERO */
+.hero{padding:56px 0 90px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.hero .tag{display:inline-block;background:var(--navy);color:#fff;font:800 17px 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:7px 18px;transform:rotate(-1.5deg);outline:2px dashed rgba(255,255,255,.6);outline-offset:-5px}
+.hero h1{font-size:clamp(46px,7.1vw,104px);color:var(--navy);margin:24px 0 0;text-shadow:5px 5px 0 rgba(192,32,56,.9)}
+.hero h1 span{display:block}
+.hero h1 .l2{color:var(--red);text-shadow:5px 5px 0 var(--navy)}
+.hero .sub{margin-top:26px;font-size:21px;max-width:520px;color:#2b2f55}
+.hero .sub b{color:var(--red)}
+.hero .cta{margin-top:30px;display:flex;gap:18px;flex-wrap:wrap}
+.hero-photo{position:relative;padding:14px;background:var(--navy);transform:rotate(1.6deg);box-shadow:14px 14px 0 var(--red)}
+.hero-photo::before{content:"";position:absolute;inset:6px;border:2px dashed rgba(255,255,255,.55);pointer-events:none;z-index:3}
+.hero-photo img.main{width:100%;aspect-ratio:1/1.04;object-fit:cover;object-position:38% 50%}
+.pin-badges{position:absolute;right:-26px;top:-34px;display:flex;z-index:4}
+.pin-badges img{width:118px;background:#fff;padding:5px;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.pin-badges img:nth-child(1){transform:rotate(-8deg)}
+.pin-badges img:nth-child(2){transform:rotate(6deg);margin-left:-18px;margin-top:10px}
+.hero-photo .cap{position:absolute;left:-18px;bottom:26px;background:var(--red);color:#fff;font:800 20px 'Barlow Condensed',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:10px 20px;transform:rotate(-3deg);z-index:4;box-shadow:4px 4px 0 var(--ink)}
+.pennant{position:absolute;left:0;right:0;bottom:-34px;z-index:5}
+.pennant .wrap{display:flex;justify-content:flex-start}
+.ribbon{background:var(--red);color:#fff;font:800 clamp(15px,1.7vw,22px) 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:14px 56px 14px 30px;clip-path:polygon(0 0,100% 0,calc(100% - 28px) 50%,100% 100%,0 100%);box-shadow:0 0 0 3px var(--ink);filter:drop-shadow(5px 5px 0 var(--ink))}
 
-/* hero */
-.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;isolation:isolate}
-.hero::before{content:"";position:absolute;inset:0;background:var(--navy-deep);clip-path:polygon(0 0,46% 0,34% 100%,0 100%);z-index:-1}
-.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:0;min-height:640px}
-.hero-copy{padding:76px 40px 150px 0;position:relative;z-index:2}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#ffd2d8}
-.eyebrow i{display:block;width:34px;height:3px;background:var(--red)}
-.hero h1{font-size:clamp(46px,6.4vw,92px);margin:20px 0 6px}
-.hero h1 .script{display:block;color:#ff7a8e;font-size:.8em;line-height:1;margin-top:6px;transform:rotate(-3deg);transform-origin:left}
-.hero p.lead{max-width:520px;font-size:19px;color:#dfe3fa;margin:22px 0 32px}
-.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
-.hero .areas{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap}
-.hero .areas span{border:1px solid rgba(255,255,255,.35);padding:5px 14px;font-size:14px;font-weight:600;letter-spacing:.04em}
-.hero-photo{position:relative;margin-right:calc((100vw - min(1200px,100vw - 40px))/-2)}
-.hero-photo .frame{position:absolute;inset:0;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%)}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
-.hero-photo .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,26,77,.35),transparent 40%)}
-.sticker{position:absolute;left:4%;bottom:170px;background:#fff;color:var(--navy);padding:14px 18px;border-left:6px solid var(--red);box-shadow:0 14px 30px rgba(0,0,0,.35);transform:rotate(-2.5deg);z-index:3;max-width:230px}
-.sticker b{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:900;font-size:34px;line-height:1;display:block;color:var(--red)}
-.sticker span{font-size:13.5px;font-weight:600;line-height:1.3;display:block;margin-top:4px}
+/* marquee */
+.marquee{background:var(--ink);color:#fff;overflow:hidden;border-block:4px solid var(--red);padding:16px 0;margin-top:34px}
+.marquee .track{display:flex;gap:46px;width:max-content;animation:run 38s linear infinite;white-space:nowrap}
+.marquee span{font-family:'Graduate',serif;font-size:26px;text-transform:uppercase;display:flex;align-items:center;gap:46px}
+.marquee span::after{content:"★";color:var(--gold);font-size:22px}
+@keyframes run{to{transform:translateX(-50%)}}
 
-/* quote card overlapping hero */
-.quote-bar{position:relative;z-index:10;margin-top:-92px}
-.quote-card{background:#fff;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--red);display:grid;grid-template-columns:230px 1fr;}
-.quote-card .qhead{background:var(--ink);color:#fff;padding:24px 24px}
-.quote-card .qhead h2{font-size:30px;line-height:1}
-.quote-card .qhead p{font-size:14px;color:#c9cdea;margin-top:10px;line-height:1.4}
-.quote-card form{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:0;align-items:stretch}
-.field{padding:14px 18px;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}
-.field label{font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.field input,.field select{border:0;outline:0;background:transparent;font:600 17px 'Figtree',sans-serif;color:var(--ink);padding:5px 0;width:100%}
-.field:focus-within{background:#fff4f5;box-shadow:inset 0 -4px 0 var(--red)}
-.quote-card button.btn{border-radius:0;font-size:16px;padding-inline:34px}
-.form-note{grid-column:1/-1;padding:10px 18px;font-size:14px;color:var(--navy);font-weight:600;background:#eef0fb;display:none}
-.form-note.show{display:block}
+/* QUOTE TICKET */
+.ticket-sec{padding:70px 0 20px}
+.ticket{position:relative;display:grid;grid-template-columns:1.15fr 1fr;background:#fff;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--navy)}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:44px;height:44px;border-radius:50%;background:var(--cream);border:3px solid var(--ink);transform:translateY(-50%);z-index:2}
+.ticket::before{left:-24px;clip-path:inset(0 0 0 50%)}
+.ticket::after{right:-24px;clip-path:inset(0 50% 0 0)}
+.ticket .left{padding:38px 46px;border-right:4px dashed var(--ink);position:relative}
+.ticket h2{font-size:clamp(32px,4vw,52px);color:var(--navy)}
+.ticket h2 em{font-style:normal;color:var(--red)}
+.ticket p.s{margin-top:12px;color:var(--muted)}
+.ticket form{padding:34px 46px;display:grid;gap:14px;background:var(--cream-2)}
+.ticket .f label{display:block;font:800 13px 'Barlow Condensed',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--navy)}
+.ticket .f input,.ticket .f select{width:100%;border:0;border-bottom:3px solid var(--ink);background:transparent;font:600 19px 'Barlow',sans-serif;padding:6px 0;outline:0;color:var(--ink)}
+.ticket .f input:focus,.ticket .f select:focus{border-color:var(--red)}
+.ticket form .btn{justify-content:center;margin-top:6px}
+.ticket .note{display:none;font-weight:600;color:var(--navy);background:#fff;padding:10px 14px;border-left:5px solid var(--red)}
+.ticket .note.show{display:block}
+.ticket .left .big{margin-top:26px;font:900 clamp(30px,3.6vw,46px) 'Barlow Condensed',sans-serif;letter-spacing:.03em;color:var(--ink)}
+.ticket .left .big a{border-bottom:5px solid var(--red)}
 
-/* proof */
-.proof{padding:96px 0 40px}
-.proof-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
-.proof h2{font-size:clamp(34px,4.4vw,56px);color:var(--navy)}
-.proof h2 .script{color:var(--red);font-size:1.05em}
-.proof p{margin-top:18px;max-width:560px;color:#33375a}
-.counts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;border-top:3px solid var(--ink)}
-.counts div{padding:16px 16px 6px 0}
-.counts b{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:900;font-size:46px;line-height:1;color:var(--red);display:block}
-.counts span{font-size:14px;font-weight:600;color:var(--muted);line-height:1.3;display:block;margin-top:6px}
-.badges{display:flex;gap:18px;justify-content:center;align-items:flex-start}
-.badge{background:#fff;padding:10px;border:1px solid var(--line);box-shadow:0 18px 40px rgba(17,26,77,.16);width:min(250px,44%)}
-.badge:nth-child(1){transform:rotate(-3deg) translateY(14px)}
-.badge:nth-child(2){transform:rotate(2.5deg)}
-.badge-cap{font-size:12.5px;color:var(--muted);text-align:center;margin-top:20px;font-weight:600;letter-spacing:.03em}
+/* SCOREBOARD */
+.score{padding:100px 0 110px}
+.sec-title{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.sec-title h2{font-size:clamp(36px,5.2vw,74px);color:var(--navy)}
+.sec-title h2 em{font-style:normal;color:var(--red)}
+.sec-title p{max-width:420px;color:var(--muted)}
+.board{background:var(--ink);color:#fff;border:4px solid var(--ink);box-shadow:12px 12px 0 var(--red);display:grid;grid-template-columns:1.1fr 1.1fr .8fr;position:relative}
+.board::before{content:"";position:absolute;inset:8px;border:2px dashed rgba(255,255,255,.28);pointer-events:none}
+.cell{padding:44px 38px 38px;border-right:3px solid rgba(255,255,255,.14);position:relative}
+.cell:last-child{border-right:0}
+.cell h3{font:800 20px 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#ff93a3;margin-bottom:22px}
+.medals{display:flex;gap:22px;flex-wrap:wrap}
+.medal{display:flex;flex-direction:column;gap:10px}
+.digits{display:flex;gap:6px}
+.d{width:58px;height:84px;background:linear-gradient(#1a2261 0 50%,#141b52 50% 100%);border-radius:6px;display:grid;place-items:center;font:900 64px 'Barlow Condensed',sans-serif;position:relative;box-shadow:inset 0 0 0 2px rgba(255,255,255,.1)}
+.d::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;background:var(--ink)}
+.medal .lbl{display:flex;align-items:center;gap:8px;font:700 17px 'Barlow Condensed',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.medal .lbl i{width:16px;height:16px;border-radius:50%;display:block;box-shadow:inset -2px -2px 0 rgba(0,0,0,.25)}
+.g i{background:var(--gold)}.s i{background:var(--silver)}.b i{background:var(--bronze)}
+.cell .src{margin-top:24px;font-size:15.5px;color:#c7cbef;max-width:330px}
+.yrs .d{width:64px}
+.yrs .plus{font:900 64px 'Barlow Condensed',sans-serif;color:var(--red);align-self:center;margin-left:4px}
 
-/* services */
-.services{padding:60px 0 100px}
-.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
-.sec-head h2{font-size:clamp(34px,4.6vw,60px);color:var(--ink)}
-.sec-head h2 .script{color:var(--red)}
-.sec-head p{max-width:380px;color:var(--muted)}
-.svc{display:grid;grid-template-columns:.9fr 1.3fr;border:3px solid var(--ink);background:#fff}
-.svc-list{border-right:3px solid var(--ink);display:flex;flex-direction:column}
-.svc-tab{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:10px;padding:22px 24px;border-bottom:1px solid var(--line);transition:background .2s,color .2s;width:100%}
-.svc-tab:last-child{border-bottom:0}
-.svc-tab em{font:900 15px 'Archivo',sans-serif;font-style:normal;color:var(--red);letter-spacing:.06em}
-.svc-tab strong{font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:800;font-size:21px;text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}
-.svc-tab svg{width:20px;height:20px;transition:transform .2s}
-.svc-tab:hover{background:var(--paper)}
-.svc-tab[aria-selected="true"]{background:var(--navy);color:#fff}
-.svc-tab[aria-selected="true"] em{color:#ff9aa9}
-.svc-tab[aria-selected="true"] svg{transform:translateX(5px)}
-.svc-tab:focus-visible{outline:3px solid var(--red);outline-offset:-6px}
-.svc-panels{position:relative;min-height:520px}
-.panel{position:absolute;inset:0;display:none;grid-template-rows:1fr auto}
-.panel.on{display:grid;animation:in .45s ease}
-@keyframes in{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
-.panel .pic{position:relative;overflow:hidden;background:var(--navy-deep)}
-.panel .pic img{width:100%;height:100%;object-fit:cover}
-.panel .pic.plain{display:grid;place-items:center;background:
-  repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 18px),var(--navy)}
-.panel .pic.plain svg{width:46%;max-width:230px;color:#fff;opacity:.95}
-.panel .pic .tag{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:9px 18px}
-.panel .txt{padding:26px 30px 30px;background:#fff;border-top:3px solid var(--ink)}
-.panel h3{font-size:30px;color:var(--navy)}
-.panel p{margin-top:10px;color:#33375a;max-width:560px}
-.panel ul{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
-.panel li{background:var(--paper);padding:5px 12px;font-weight:600;font-size:14.5px;border-left:3px solid var(--red)}
+/* LINEUP */
+.lineup{padding:20px 0 110px}
+.rows{border-top:4px solid var(--ink)}
+.row{border-bottom:4px solid var(--ink);background:var(--cream);transition:background .25s}
+.row:hover{background:#fff}
+.row-btn{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:grid;grid-template-columns:150px 1fr auto;align-items:center;gap:24px;padding:22px 8px}
+.row-btn:focus-visible{outline:4px solid var(--red);outline-offset:-4px}
+.num{font-family:'Graduate',serif;font-size:clamp(56px,8vw,116px);line-height:.9;color:transparent;-webkit-text-stroke:3px var(--navy);transition:color .25s}
+.row.open .num,.row:hover .num{color:var(--red);-webkit-text-stroke-color:var(--red)}
+.row h3{font-family:'Graduate',serif;font-weight:400;text-transform:uppercase;font-size:clamp(24px,3.6vw,46px);color:var(--ink);line-height:1}
+.row .hint{display:block;font:600 18px 'Barlow',sans-serif;text-transform:none;color:var(--muted);margin-top:8px;letter-spacing:0}
+.plus-i{width:52px;height:52px;border:3px solid var(--ink);display:grid;place-items:center;background:#fff;transition:transform .3s,background .25s;position:relative}
+.plus-i::before,.plus-i::after{content:"";position:absolute;background:var(--ink);transition:transform .3s,background .25s}
+.plus-i::before{width:22px;height:4px}.plus-i::after{width:4px;height:22px}
+.row.open .plus-i{background:var(--red);transform:rotate(180deg)}
+.row.open .plus-i::before,.row.open .plus-i::after{background:#fff}
+.row.open .plus-i::after{transform:scaleY(0)}
+.row-body{display:none;grid-template-columns:150px 1.1fr 1fr;gap:24px;padding:0 8px 34px}
+.row.open .row-body{display:grid;animation:drop .4s ease}
+@keyframes drop{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+.row-body .txt{grid-column:2;align-self:center}
+.row-body p{font-size:20px;max-width:540px}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chips li{border:2px solid var(--ink);padding:5px 14px;font:700 17px 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;background:#fff}
+.chips li:nth-child(odd){background:var(--navy);color:#fff;border-color:var(--navy)}
+.row-body .ph{position:relative;min-height:300px;border:4px solid var(--ink);box-shadow:8px 8px 0 var(--red);overflow:hidden;background:var(--navy)}
+.row-body .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.row-body .ph.plain{display:grid;place-items:center;background:repeating-linear-gradient(45deg,rgba(255,255,255,.07) 0 3px,transparent 3px 22px),var(--navy)}
+.row-body .ph.plain svg{width:44%;color:#fff}
+.row-body .ph.plain b{position:absolute;left:0;bottom:0;background:var(--gold);color:var(--ink);font:800 17px 'Barlow Condensed',sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px}
 
-/* stains */
-.stains{background:var(--ink);color:#fff;padding:90px 0;position:relative;overflow:hidden}
-.stains-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:0;align-items:stretch}
-.stains-img{position:relative;min-height:460px}
-.stains-img img.a{position:absolute;left:0;top:0;width:80%;height:78%;object-fit:cover;border:6px solid #fff}
-.stains-img img.b{position:absolute;right:0;bottom:0;width:58%;height:52%;object-fit:cover;border:6px solid #fff;box-shadow:-10px 10px 0 var(--red)}
-.stains-img .pin{position:absolute;left:12%;top:60%;background:var(--red);color:#fff;font:800 13px 'Archivo',sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;transform:rotate(-4deg);z-index:2}
-.stains-copy{padding:20px 0 20px 70px;display:flex;flex-direction:column;justify-content:center}
-.stains-copy h2{font-size:clamp(34px,4.4vw,56px)}
-.stains-copy h2 .script{color:#ff7a8e}
-.stains-copy p{margin-top:18px;color:#cfd3ef;max-width:520px}
-.stain-list{list-style:none;margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid rgba(255,255,255,.25)}
-.stain-list li{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.25);font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:17px;display:flex;align-items:center;gap:12px}
-.stain-list li::before{content:"";width:12px;height:12px;background:var(--red);border-radius:50%;flex:none}
-.equip{margin-top:28px;display:flex;gap:16px;align-items:center;background:rgba(255,255,255,.07);padding:16px 20px;border-left:5px solid var(--red)}
-.equip b{font-family:'Archivo',sans-serif;font-stretch:110%;text-transform:uppercase;font-size:18px;display:block}
-.equip span{font-size:15px;color:#cfd3ef}
+/* STAINS */
+.stains{background:var(--navy);color:#fff;padding:100px 0;position:relative;overflow:hidden;border-block:5px solid var(--ink)}
+.stains::before{content:"CLEAN";position:absolute;right:-30px;top:-30px;font:400 clamp(160px,28vw,420px) 'Graduate',serif;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.12);line-height:.8;pointer-events:none}
+.stains-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:70px;align-items:center;position:relative}
+.stains h2{font-size:clamp(36px,5vw,70px)}
+.stains h2 em{font-style:normal;color:#ff7a8e}
+.stains p.l{margin-top:20px;font-size:20px;color:#d8dcf7;max-width:520px}
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+.sw{text-align:center}
+.sw svg{width:100%;max-width:110px;margin:0 auto}
+.sw span{display:block;margin-top:10px;font:800 17px 'Barlow Condensed',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.truck{margin-top:34px;background:#fff;color:var(--ink);display:flex;gap:16px;align-items:center;padding:16px 22px;border-left:8px solid var(--red);max-width:520px}
+.truck b{font:800 22px 'Barlow Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase;display:block;line-height:1.1}
+.truck span{font-size:16px;color:var(--muted)}
+.collage{position:relative;min-height:540px}
+.collage img{position:absolute;border:6px solid #fff;box-shadow:10px 10px 0 var(--red);object-fit:cover}
+.collage .a{left:0;top:0;width:78%;height:340px;transform:rotate(-2.5deg);object-position:50% 78%}
+.collage .b{right:0;bottom:0;width:62%;height:300px;transform:rotate(2.5deg);box-shadow:10px 10px 0 var(--gold)}
 
-/* people */
-.people{padding:100px 0}
-.people-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
-.photo-card{position:relative}
-.photo-card img.main{width:100%;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--ink)}
-.photo-card img.van{position:absolute;right:-24px;bottom:-34px;width:34%;border:5px solid #fff;box-shadow:8px 8px 0 var(--navy)}
-.people h2{font-size:clamp(32px,4vw,52px);color:var(--navy)}
-.people h2 .script{color:var(--red)}
-.people p{margin-top:16px;color:#33375a}
-.people .sign{margin-top:22px;font-size:46px;color:var(--red);line-height:1}
+/* ROSTER */
+.roster{padding:110px 0}
+.roster-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:80px;align-items:center}
+.card{background:#fff;border:4px solid var(--ink);padding:16px 16px 20px;box-shadow:12px 12px 0 var(--navy);transform:rotate(-2deg);position:relative;max-width:520px}
+.card::before{content:"";position:absolute;inset:6px;border:2px dashed rgba(16,20,58,.35);pointer-events:none;z-index:2}
+.card img{width:100%;aspect-ratio:4/3.3;object-fit:cover;object-position:50% 38%;border:3px solid var(--ink)}
+.card .nm{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;font-family:'Graduate',serif;text-transform:uppercase;font-size:24px;color:var(--navy)}
+.card .nm span{font:800 16px 'Barlow Condensed',sans-serif;letter-spacing:.12em;color:var(--red)}
+.card .van{position:absolute;right:-60px;bottom:-54px;width:62%;border:5px solid #fff;box-shadow:8px 8px 0 var(--red);transform:rotate(4deg);z-index:3}
+.roster h2{font-size:clamp(34px,4.6vw,62px);color:var(--navy)}
+.roster h2 em{font-style:normal;color:var(--red)}
+.roster p{margin-top:20px;font-size:20px;max-width:540px}
+.roster .sign{margin-top:26px;font-size:54px;color:var(--red);line-height:1}
 
-/* reviews */
-.reviews{background:var(--paper-2);padding:90px 0;border-block:3px solid var(--ink)}
-.rev-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:26px;align-items:start}
-.rev{background:#fff;border:2px solid var(--ink);padding:28px 26px;position:relative}
-.rev:nth-child(1){grid-row:span 1;background:var(--navy);color:#fff;border-color:var(--navy)}
-.rev:nth-child(1) q{font-size:23px}
-.rev q{display:block;font-size:19px;line-height:1.45;font-weight:500;quotes:"\201C" "\201D"}
-.rev .by{margin-top:18px;font-family:'Archivo',sans-serif;font-stretch:108%;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:14px}
-.stars{color:#f2b01e;letter-spacing:3px;font-size:18px;margin-bottom:10px}
-.rev-foot{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+/* REVIEWS */
+.reviews{background:var(--cream-2);border-block:5px solid var(--ink);padding:100px 0}
+.rev-wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.big-q{background:var(--red);color:#fff;padding:46px 46px 40px;border:4px solid var(--ink);box-shadow:12px 12px 0 var(--ink);position:relative;transform:rotate(-1deg)}
+.big-q::before{content:"\201C";position:absolute;left:24px;top:-30px;font:400 150px 'Graduate',serif;color:var(--gold);line-height:1}
+.big-q q{display:block;font:800 clamp(30px,3.6vw,48px) 'Barlow Condensed',sans-serif;text-transform:uppercase;line-height:1.05;letter-spacing:.02em;quotes:none;margin-top:30px}
+.big-q .by{margin-top:22px;font:700 19px 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.stars{color:var(--gold);letter-spacing:4px;font-size:22px}
+.slips{display:grid;gap:26px}
+.slip{background:#fff;border:3px solid var(--ink);padding:24px 26px;position:relative;box-shadow:6px 6px 0 var(--navy)}
+.slip:nth-child(1){transform:rotate(1.5deg)}
+.slip:nth-child(2){transform:rotate(-1.5deg);margin-left:30px}
+.slip::before{content:"";position:absolute;left:50%;top:-14px;width:90px;height:26px;background:rgba(217,165,38,.75);transform:translateX(-50%) rotate(-2deg)}
+.slip q{font-size:20px;display:block;line-height:1.4;quotes:none}
+.slip .by{margin-top:12px;font:800 16px 'Barlow Condensed',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.rev-btns{margin-top:50px;display:flex;gap:22px;flex-wrap:wrap}
 
-/* final cta */
-.final{padding:90px 0 110px}
-.final-box{background:var(--red);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;border:3px solid var(--ink);box-shadow:12px 12px 0 var(--navy);overflow:hidden}
-.final-box .l{padding:50px 48px}
-.final-box h2{font-size:clamp(34px,4.4vw,58px)}
-.final-box h2 .script{color:#fff;opacity:.95}
-.final-box p{margin-top:16px;max-width:460px;color:#ffe3e7}
-.final-box .btns{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
-.final-box .r{background:var(--navy-deep);padding:44px 40px;display:flex;flex-direction:column;justify-content:center;gap:6px}
-.final-box .r small{font-family:'Archivo',sans-serif;font-stretch:110%;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:#aab0e0}
-.final-box .r a.tel{font-family:'Archivo',sans-serif;font-stretch:112%;font-weight:900;font-size:clamp(30px,3.4vw,44px);line-height:1.1}
-.hours{margin-top:18px;border-top:1px solid rgba(255,255,255,.25)}
-.hours div{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:15.5px}
-.hours div span:last-child{font-weight:700}
+/* CALL */
+.call{padding:100px 0 90px;text-align:center}
+.call .k{font:800 20px 'Barlow Condensed',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.call a.tel{display:block;font-family:'Graduate',serif;font-size:clamp(40px,10.4vw,150px);line-height:1;color:var(--navy);text-shadow:6px 6px 0 var(--red);margin:14px 0 8px;transition:transform .2s}
+.call a.tel:hover{transform:scale(1.02) rotate(-1deg)}
+.hours{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.hours div{background:#fff;border:3px solid var(--ink);padding:12px 22px;box-shadow:5px 5px 0 var(--ink);font:800 20px 'Barlow Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.hours div span{display:block;font:600 16px 'Barlow',sans-serif;color:var(--muted);text-transform:none;letter-spacing:0}
+.call .btns{margin-top:38px;display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
 
-/* footer */
-footer{background:var(--navy-deep);color:#c9cdea;padding:56px 0 0}
-.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px}
-.foot-grid .plate{background:#fff;display:inline-block;padding:8px 12px}
-.foot-grid .plate img{height:54px}
-.foot-grid p{margin-top:16px;font-size:15px;max-width:290px}
-footer h4{font-family:'Archivo',sans-serif;font-stretch:110%;text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:#fff;margin-bottom:14px}
+/* FOOTER */
+footer{background:var(--ink);color:#c9cdee;padding:60px 0 0}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:46px}
+.foot .plate{display:inline-block;background:#fff;padding:8px 14px;border:3px solid var(--red)}
+.foot .plate img{height:56px}
+.foot p{margin-top:18px;font-size:16px;max-width:290px}
+footer h4{font:800 17px 'Barlow Condensed',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:14px}
 footer ul{list-style:none}
-footer li{margin:8px 0;font-size:15.5px}
+footer li{margin:9px 0;font-size:17px}
 footer a:hover{color:#fff;text-decoration:underline}
-.legal{border-top:1px solid rgba(255,255,255,.15);padding:18px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
-.legal a{color:#fff;font-weight:700;border-bottom:2px solid var(--red)}
+.legal{border-top:1px solid rgba(255,255,255,.18);padding:18px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:15px}
+.legal a{color:#fff;font-weight:700;border-bottom:3px solid var(--red)}
 
-/* mobile call bar */
 .callbar{display:none}
 
-@media (max-width:1020px){
-  .hero::before{clip-path:none;height:50%}
-  .hero-grid{grid-template-columns:1fr;min-height:0}
-  .hero-copy{padding:56px 0 30px}
-  .hero-photo{margin:0 -20px;height:360px}
-  .hero-photo .frame{clip-path:polygon(0 8%,100% 0,100% 100%,0 100%)}
-  .sticker{left:auto;right:18px;bottom:auto;top:28px}
-  .quote-bar{margin-top:-40px}
-  .quote-card{grid-template-columns:1fr}
-  .quote-card form{grid-template-columns:1fr 1fr}
-  .quote-card form .btn{grid-column:1/-1;justify-content:center;padding-block:18px}
-  .field{border-bottom:1px solid var(--line)}
-  .proof-grid,.stains-grid,.people-grid,.final-box{grid-template-columns:1fr}
-  .svc{grid-template-columns:1fr}
-  .svc-list{border-right:0;border-bottom:3px solid var(--ink)}
-  .svc-panels{min-height:0}
-  .panel{position:static}
-  .panel .pic{height:280px}
-  .stains-copy{padding:40px 0 0}
-  .stains-img{min-height:380px}
-  .rev-grid{grid-template-columns:1fr}
-  .foot-grid{grid-template-columns:1fr 1fr}
-  .photo-card img.van{right:-6px}
-  .people-grid{gap:56px}
+@media (max-width:1040px){
+  .hero-grid,.stains-grid,.roster-grid,.rev-wrap{grid-template-columns:1fr}
+  .hero-photo{max-width:560px;margin:10px auto 0}
+  .pin-badges{right:-8px}
+  .ticket{grid-template-columns:1fr}
+  .ticket .left{border-right:0;border-bottom:4px dashed var(--ink)}
+  .ticket::before,.ticket::after{top:auto;bottom:auto}
+  .ticket::before{left:-24px;top:var(--cut,50%)}
+  .board{grid-template-columns:1fr}
+  .cell{border-right:0;border-bottom:3px solid rgba(255,255,255,.14)}
+  .cell:last-child{border-bottom:0}
+  .row-body{grid-template-columns:1fr}
+  .row-body .txt{grid-column:1}
+  .row-body .ph{min-height:260px}
+  .row-btn{grid-template-columns:96px 1fr auto}
+  .row-body{padding-left:0;padding-right:0}
+  .collage{min-height:480px}
+  .card{margin:0 auto}
+  .card .van{right:-12px}
+  .foot{grid-template-columns:1fr 1fr}
+  .slip:nth-child(2){margin-left:0}
 }
 @media (max-width:760px){
-  body{font-size:16px;padding-bottom:64px}
-  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--paper);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;border-bottom:3px solid var(--navy);display:none}
-  nav.main.open{display:flex}
-  nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}
-  nav.main a.btn{margin-top:14px;justify-content:center;border:0}
-  .burger{display:block}
-  .brand img{height:52px}
-  .strip .wrap{justify-content:center;text-align:center}
+  body{font-size:17px;padding-bottom:62px}
   .strip .hrs{display:none}
-  .quote-card form{grid-template-columns:1fr}
-  .counts{grid-template-columns:1fr 1fr 1fr}
-  .counts b{font-size:34px}
-  .foot-grid{grid-template-columns:1fr}
-  .final-box .l,.final-box .r{padding:34px 26px}
-  .stain-list{grid-template-columns:1fr}
-  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;border-top:3px solid var(--ink)}
-  .callbar a{padding:16px;text-align:center;font:800 14px 'Archivo',sans-serif;letter-spacing:.06em;text-transform:uppercase}
+  .strip .wrap{justify-content:center}
+  .brand img{height:52px}
+  .burger{display:block}
+  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--cream);flex-direction:column;align-items:stretch;gap:0;padding:6px 20px 20px;border-bottom:4px solid var(--navy);display:none}
+  nav.main.open{display:flex}
+  nav.main a:not(.btn){padding:14px 0;border-bottom:1px solid rgba(16,20,58,.15)}
+  nav.main .btn{margin-top:14px;justify-content:center}
+  .hero{padding:40px 0 70px}
+  .hero h1{text-shadow:3px 3px 0 rgba(192,32,56,.9)}
+  .hero h1 .l2{text-shadow:3px 3px 0 var(--navy)}
+  .pin-badges img{width:84px}
+  .pin-badges{top:-28px}
+  .ticket .left,.ticket form{padding:28px 22px}
+  .ticket::before,.ticket::after{display:none}
+  .d{width:46px;height:68px;font-size:50px}
+  .yrs .d{width:50px}
+  .row-btn{grid-template-columns:70px 1fr 46px;gap:12px}
+  .num{-webkit-text-stroke-width:2px}
+  .plus-i{width:44px;height:44px}
+  .swatches{grid-template-columns:repeat(2,1fr)}
+  .collage .a{height:260px}.collage .b{height:230px}.collage{min-height:420px}
+  .big-q{padding:40px 24px 30px}
+  .foot{grid-template-columns:1fr}
+  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:70;border-top:4px solid var(--ink)}
+  .callbar a{padding:15px;text-align:center;font:800 17px 'Barlow Condensed',sans-serif;letter-spacing:.1em;text-transform:uppercase}
   .callbar a:first-child{background:var(--red);color:#fff}
   .callbar a:last-child{background:#fff;color:var(--navy)}
-  .svc-tab{padding:18px 18px}
-  .svc-tab strong{font-size:18px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -281,119 +306,143 @@ footer a:hover{color:#fff;text-decoration:underline}
       <a href="#gallery">Gallery</a>
       <a href="#coupons">Coupons</a>
       <a href="#contact">Contact</a>
-      <a class="btn btn-red" href="#quote">Get A Quote</a>
+      <a class="btn" href="#quote">Get A Quote</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
+
 <section class="hero">
   <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow"><i></i>Airdrie, Calgary, Cochrane &amp; Crossfield</span>
-      <h1 class="display">Professional<br>Carpet Cleaning<span class="script">done right.</span></h1>
-      <p class="lead">Truck-mounted steam cleaning for homes, offices and vehicles, plus furnace and duct cleaning. Over 42 years of combined experience.</p>
+    <div>
+      <span class="tag">Airdrie's carpet cleaners</span>
+      <h1 class="varsity"><span>Professional</span><span class="l2">Carpet</span><span>Cleaning</span></h1>
+      <p class="sub">Serving <b>Airdrie, Calgary, Cochrane and Crossfield</b> with truck-mounted steam cleaning. Over 42 years of combined experience.</p>
       <div class="cta">
-        <a class="btn btn-red" href="#quote">Get A Free Quote</a>
-        <a class="btn btn-white" href="tel:4039905101">Call 403-990-5101</a>
+        <a class="btn" href="#quote">Get A Free Quote</a>
+        <a class="btn alt" href="tel:4039905101">403-990-5101</a>
       </div>
-      <div class="areas"><span>Residential</span><span>Commercial</span><span>Upholstery</span><span>Furnace &amp; Duct</span><span>Vehicle</span></div>
     </div>
     <div class="hero-photo">
-      <div class="frame"><img src="assets/team.jpg" alt="Steve and Kelsey of Airdrie Carpet Cleaning standing in front of their service vans holding award trophies"></div>
-      <div class="sticker"><b>Gold</b><span>Best Carpet Cleaner &amp; Best Furnace Cleaner, Best of Airdrie 2026</span></div>
+      <img class="main" src="assets/team.jpg" alt="Steve and Kelsey of Airdrie Carpet Cleaning in front of their vans, holding their award trophies">
+      <div class="pin-badges">
+        <img src="assets/award-carpet.jpg" alt="Gold, Best Carpet Cleaner, City View Airdrie 2026 Readers' Choice Awards">
+        <img src="assets/award-furnace.jpg" alt="Gold, Best Furnace Cleaner, City View Airdrie 2026 Readers' Choice Awards">
+      </div>
+      <div class="cap">Gold · Best of Airdrie 2026</div>
     </div>
   </div>
+  <div class="pennant"><div class="wrap"><div class="ribbon">Residential · Commercial · Upholstery · Furnace &amp; Duct · Vehicle</div></div></div>
 </section>
 
-<section class="quote-bar" id="quote">
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Best Carpet Cleaner</span><span>Best Furnace Cleaner</span><span>Best of Airdrie 2026</span><span>42+ Years Combined Experience</span><span>Truck-Mounted Equipment</span><span>Airdrie · Calgary · Cochrane · Crossfield</span>
+    <span>Best Carpet Cleaner</span><span>Best Furnace Cleaner</span><span>Best of Airdrie 2026</span><span>42+ Years Combined Experience</span><span>Truck-Mounted Equipment</span><span>Airdrie · Calgary · Cochrane · Crossfield</span>
+  </div>
+</div>
+
+<section class="ticket-sec" id="quote">
   <div class="wrap">
-    <div class="quote-card">
-      <div class="qhead">
-        <h2 class="display">Free<br>quote</h2>
-        <p>Tell us what needs cleaning and we will get back to you.</p>
+    <div class="ticket">
+      <div class="left">
+        <h2 class="varsity">Your free<br><em>quote</em> ticket</h2>
+        <p class="s">Tell us what needs cleaning and we will get back to you. Prefer to talk?</p>
+        <div class="big"><a href="tel:4039905101">403-990-5101</a></div>
       </div>
       <form id="quoteForm" novalidate>
-        <div class="field"><label for="qn">Your name</label><input id="qn" name="name" type="text" autocomplete="name" placeholder="Full name" required></div>
-        <div class="field"><label for="qp">Phone</label><input id="qp" name="phone" type="tel" autocomplete="tel" placeholder="403-000-0000" required></div>
-        <div class="field"><label for="qs">What needs cleaning?</label>
-          <select id="qs" name="service">
-            <option>Residential carpet</option>
-            <option>Commercial carpet</option>
-            <option>Upholstery</option>
-            <option>Furnace / duct</option>
-            <option>Vehicle</option>
-          </select>
+        <div class="f"><label for="qn">Your name</label><input id="qn" name="name" type="text" autocomplete="name" required></div>
+        <div class="f"><label for="qp">Phone</label><input id="qp" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="f"><label for="qs">What needs cleaning?</label>
+          <select id="qs" name="service"><option>Residential carpet</option><option>Commercial carpet</option><option>Upholstery</option><option>Furnace / duct</option><option>Vehicle</option></select>
         </div>
-        <button class="btn btn-red" type="submit">Request quote</button>
-        <div class="form-note" id="formNote" role="status"></div>
+        <button class="btn" type="submit">Send my request</button>
+        <div class="note" id="formNote" role="status"></div>
       </form>
     </div>
   </div>
 </section>
 
-<section class="proof" id="about">
-  <div class="wrap proof-grid">
-    <div>
-      <span class="eyebrow" style="color:var(--red)"><i></i>Why Airdrie picks us</span>
-      <h2 class="display" style="margin-top:14px">Voted <span class="script">Best of Airdrie</span> again</h2>
-      <p>We are an award-winning floor care provider with over 42 years of combined experience. In 2026 Airdrie City View readers voted us Gold for both Best Carpet Cleaner and Best Furnace Cleaner.</p>
-      <div class="counts">
-        <div><b>15</b><span>Golds &amp; 3 Silvers, Best Carpet Cleaning</span></div>
-        <div><b>9</b><span>Golds, 8 Silvers &amp; 1 Bronze, Best Furnace Cleaning</span></div>
-        <div><b>42+</b><span>Years of combined experience</span></div>
-      </div>
+<section class="score" id="about">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2 class="varsity">The <em>season</em> record</h2>
+      <p>An award-winning floor care provider. Airdrie City View readers voted us Gold in both categories for 2026.</p>
     </div>
-    <div>
-      <div class="badges">
-        <div class="badge"><img src="assets/award-carpet.jpg" alt="Gold, City View Airdrie 2026 Readers' Choice Awards, Best Carpet Cleaner, Airdrie Carpet Cleaning" loading="lazy"></div>
-        <div class="badge"><img src="assets/award-furnace.jpg" alt="Gold, City View Airdrie 2026 Readers' Choice Awards, Best Furnace Cleaner, Airdrie Carpet Cleaning" loading="lazy"></div>
+    <div class="board">
+      <div class="cell">
+        <h3>Best carpet cleaning</h3>
+        <div class="medals">
+          <div class="medal g"><div class="digits"><span class="d">1</span><span class="d">5</span></div><div class="lbl"><i></i>Gold</div></div>
+          <div class="medal s"><div class="digits"><span class="d">3</span></div><div class="lbl"><i></i>Silver</div></div>
+        </div>
+        <p class="src">City View Airdrie Readers' Choice Awards.</p>
       </div>
-      <p class="badge-cap" style="text-align:center;margin-left:auto;margin-right:auto">City View Airdrie · 2026 Readers' Choice Awards</p>
+      <div class="cell">
+        <h3>Best furnace cleaning</h3>
+        <div class="medals">
+          <div class="medal g"><div class="digits"><span class="d">9</span></div><div class="lbl"><i></i>Gold</div></div>
+          <div class="medal s"><div class="digits"><span class="d">8</span></div><div class="lbl"><i></i>Silver</div></div>
+          <div class="medal b"><div class="digits"><span class="d">1</span></div><div class="lbl"><i></i>Bronze</div></div>
+        </div>
+        <p class="src">City View Airdrie Readers' Choice Awards.</p>
+      </div>
+      <div class="cell yrs">
+        <h3>Combined experience</h3>
+        <div class="medal"><div class="digits"><span class="d">4</span><span class="d">2</span><span class="plus">+</span></div><div class="lbl">Years</div></div>
+        <p class="src">Over 42 years of combined experience on every job.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="services" id="services">
+<section class="lineup" id="services">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 class="display">Pick your <span class="script">job</span></h2>
-      <p>Five ways we can help. Choose one to see what is included.</p>
+    <div class="sec-title">
+      <h2 class="varsity">The <em>lineup</em></h2>
+      <p>Five jobs, one crew. Tap a number to see what is included.</p>
     </div>
-    <div class="svc">
-      <div class="svc-list" role="tablist" aria-label="Services">
-        <button class="svc-tab" role="tab" aria-selected="true" aria-controls="p1" id="t1"><em>01</em><strong>Residential carpet</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p2" id="t2"><em>02</em><strong>Commercial carpet</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p3" id="t3"><em>03</em><strong>Upholstery</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p4" id="t4"><em>04</em><strong>Furnace &amp; duct</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <button class="svc-tab" role="tab" aria-selected="false" aria-controls="p5" id="t5"><em>05</em><strong>Vehicle</strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <div class="rows">
+      <div class="row open">
+        <button class="row-btn" aria-expanded="true"><span class="num">01</span><span><h3>Residential carpet<span class="hint">Carpets, furniture, mattresses, mats and rugs</span></h3></span><span class="plus-i"></span></button>
+        <div class="row-body">
+          <div class="txt"><p>Steam cleaning for the carpets, furniture, mattresses, mats and rugs in your home, with furnace and duct cleaning available too.</p>
+            <ul class="chips"><li>Furniture</li><li>Mattresses</li><li>Mats</li><li>Rugs</li><li>Furnace &amp; duct</li></ul></div>
+          <div class="ph"><img src="assets/dog-carpet.jpg" alt="Muddy paw prints on a cream carpet" loading="lazy" style="object-position:50% 70%"></div>
+        </div>
       </div>
-      <div class="svc-panels">
-        <article class="panel on" id="p1" role="tabpanel" aria-labelledby="t1">
-          <div class="pic"><img src="assets/dog-carpet.jpg" alt="Muddy paw prints on a cream carpet" loading="lazy"><span class="tag">Residential</span></div>
-          <div class="txt"><h3 class="display">Residential carpet</h3><p>Steam cleaning for the carpets, furniture, mattresses, mats and rugs in your home, with furnace and duct cleaning available too.</p>
-          <ul><li>Furniture</li><li>Mattresses</li><li>Mats</li><li>Rugs</li><li>Furnace &amp; duct</li></ul></div>
-        </article>
-        <article class="panel" id="p2" role="tabpanel" aria-labelledby="t2">
-          <div class="pic"><img src="assets/office.jpg" alt="Clean grey carpet in a bright modern office" loading="lazy" style="object-position:62% 50%"><span class="tag">Commercial</span></div>
-          <div class="txt"><h3 class="display">Commercial carpet</h3><p>Steam cleaning for office carpets, chairs and partition dividers, plus deep cleaning for your high-traffic areas.</p>
-          <ul><li>Office carpets</li><li>Chairs</li><li>Partition dividers</li><li>High-traffic areas</li></ul></div>
-        </article>
-        <article class="panel" id="p3" role="tabpanel" aria-labelledby="t3">
-          <div class="pic"><img src="assets/white-dog.jpg" alt="White dog resting on clean carpet" loading="lazy" style="object-position:40% 50%"><span class="tag">Upholstery</span></div>
-          <div class="txt"><h3 class="display">Upholstery</h3><p>Upholstery and furniture cleaning that lifts everyday stains like coffee, wine, pet urine and grease.</p>
-          <ul><li>Couches</li><li>Chairs</li><li>Furniture</li><li>Pet stains</li></ul></div>
-        </article>
-        <article class="panel" id="p4" role="tabpanel" aria-labelledby="t4">
-          <div class="pic plain"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="52" height="40" rx="3"/><path d="M14 22h36M14 30h36M14 38h36M14 46h20"/></svg><span class="tag">Furnace &amp; duct</span></div>
-          <div class="txt"><h3 class="display">Furnace &amp; duct</h3><p>Furnace and air duct cleaning from the team voted Best Furnace Cleaner in Airdrie by City View readers in 2026.</p>
-          <ul><li>Furnace cleaning</li><li>Air duct cleaning</li><li>Gold, Best of Airdrie 2026</li></ul></div>
-        </article>
-        <article class="panel" id="p5" role="tabpanel" aria-labelledby="t5">
-          <div class="pic"><img src="assets/van.jpg" alt="Airdrie Carpet Cleaning service van parked on a residential street" loading="lazy"><span class="tag">Vehicle</span></div>
-          <div class="txt"><h3 class="display">Vehicle</h3><p>Steam cleaning for vehicle carpet and upholstery, from cars to RVs, boats and buses, at homes and offices.</p>
-          <ul><li>Vehicle carpet</li><li>Vehicle upholstery</li><li>RVs</li><li>Boats</li><li>Buses</li></ul></div>
-        </article>
+      <div class="row">
+        <button class="row-btn" aria-expanded="false"><span class="num">02</span><span><h3>Commercial carpet<span class="hint">Offices, chairs, dividers and high-traffic areas</span></h3></span><span class="plus-i"></span></button>
+        <div class="row-body">
+          <div class="txt"><p>Steam cleaning for office carpets, chairs and partition dividers, plus deep cleaning for your high-traffic areas.</p>
+            <ul class="chips"><li>Office carpets</li><li>Chairs</li><li>Partition dividers</li><li>High-traffic areas</li></ul></div>
+          <div class="ph"><img src="assets/office.jpg" alt="Grey carpet in a bright modern office" loading="lazy" style="object-position:62% 50%"></div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="row-btn" aria-expanded="false"><span class="num">03</span><span><h3>Upholstery<span class="hint">Couches, chairs and furniture</span></h3></span><span class="plus-i"></span></button>
+        <div class="row-body">
+          <div class="txt"><p>Upholstery and furniture cleaning that lifts everyday stains like coffee, wine, pet urine and grease.</p>
+            <ul class="chips"><li>Couches</li><li>Chairs</li><li>Furniture</li><li>Pet stains</li></ul></div>
+          <div class="ph"><img src="assets/white-dog.jpg" alt="White dog resting on soft clean carpet" loading="lazy" style="object-position:35% 50%"></div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="row-btn" aria-expanded="false"><span class="num">04</span><span><h3>Furnace &amp; duct<span class="hint">Voted Best Furnace Cleaner in Airdrie</span></h3></span><span class="plus-i"></span></button>
+        <div class="row-body">
+          <div class="txt"><p>Furnace and air duct cleaning from the team voted Best Furnace Cleaner in Airdrie by City View readers in 2026.</p>
+            <ul class="chips"><li>Furnace cleaning</li><li>Air duct cleaning</li><li>Gold, 2026</li></ul></div>
+          <div class="ph plain"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="12" width="52" height="40" rx="3"/><path d="M14 22h36M14 30h36M14 38h36M14 46h20"/></svg><b>Best Furnace Cleaner</b></div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="row-btn" aria-expanded="false"><span class="num">05</span><span><h3>Vehicle<span class="hint">Homes, offices, RVs, boats and buses</span></h3></span><span class="plus-i"></span></button>
+        <div class="row-body">
+          <div class="txt"><p>Steam cleaning for vehicle carpet and upholstery, from cars to RVs, boats and buses, at homes and offices.</p>
+            <ul class="chips"><li>Vehicle carpet</li><li>Vehicle upholstery</li><li>RVs</li><li>Boats</li><li>Buses</li></ul></div>
+          <div class="ph"><img src="assets/van.jpg" alt="Airdrie Carpet Cleaning van parked on a residential street" loading="lazy"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -401,31 +450,33 @@ footer a:hover{color:#fff;text-decoration:underline}
 
 <section class="stains" id="gallery">
   <div class="wrap stains-grid">
-    <div class="stains-img">
-      <img class="a" src="assets/dog-carpet.jpg" alt="Cream carpet with muddy paw prints" loading="lazy" style="object-position:50% 80%">
-      <span class="pin">Muddy paws? No problem</span>
-      <img class="b" src="assets/white-dog.jpg" alt="White dog resting on soft clean carpet" loading="lazy" style="object-position:30% 50%">
+    <div>
+      <h2 class="varsity">Stains <em>don't</em> stand a chance</h2>
+      <p class="l">Our truck-mounted equipment cleans deeper and dries faster. Stain removal for the usual suspects:</p>
+      <div class="swatches">
+        <div class="sw"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8c14 2 20 12 30 18 12 8 14 22 8 34-6 13-4 26-22 30-14 3-20-6-34-8C16 80 8 66 14 52c5-12-2-20 6-32C28 9 38 7 50 8z" fill="#5a3418"/><circle cx="50" cy="52" r="17" fill="#7a4a24"/></svg><span>Coffee</span></div>
+        <div class="sw"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M52 6c18 4 26 18 32 30 6 14 8 28-4 40-10 10-24 18-40 12C24 82 12 70 12 54c0-14 8-20 14-32C32 10 40 4 52 6z" fill="#7d1230"/><circle cx="50" cy="50" r="16" fill="#a31c42"/></svg><span>Wine</span></div>
+        <div class="sw"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M48 10c16 0 24 10 32 20 10 12 12 26 6 38-8 16-24 24-38 20C30 86 14 76 12 60 10 46 20 38 24 26 28 14 36 10 48 10z" fill="#c9a227"/><circle cx="48" cy="52" r="16" fill="#e2c14c"/></svg><span>Pet urine</span></div>
+        <div class="sw"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8c16 0 22 12 32 20 10 9 10 24 4 36-7 14-22 28-38 26C32 88 14 78 12 62 10 46 22 40 24 28 26 14 36 8 50 8z" fill="#1d1f2c"/><circle cx="50" cy="52" r="17" fill="#34384d"/></svg><span>Grease</span></div>
+      </div>
+      <div class="truck"><div><b>Truck-mounted equipment</b><span>Deeper cleaning and faster drying.</span></div></div>
     </div>
-    <div class="stains-copy">
-      <h2 class="display">Deep clean, <span class="script">faster dry</span></h2>
-      <p>Our truck-mounted equipment gets deeper into the carpet and helps it dry faster. Stain removal for the usual suspects:</p>
-      <ul class="stain-list"><li>Coffee</li><li>Wine</li><li>Pet urine</li><li>Grease</li></ul>
-      <div class="equip"><div><b>Truck-mounted equipment</b><span>Deeper cleaning and faster drying.</span></div></div>
+    <div class="collage">
+      <img class="a" src="assets/dog-carpet.jpg" alt="Cream carpet with muddy paw prints" loading="lazy">
+      <img class="b" src="assets/van.jpg" alt="Airdrie Carpet Cleaning service van" loading="lazy">
     </div>
   </div>
 </section>
 
-<section class="people">
-  <div class="wrap people-grid">
-    <div class="photo-card">
-      <img class="main" src="assets/van.jpg" alt="Airdrie Carpet Cleaning branded van parked on a residential street" loading="lazy">
-      <img class="van" src="assets/team-crop.jpg" alt="Steve and Kelsey holding their Best of Airdrie awards" loading="lazy">
+<section class="roster">
+  <div class="wrap roster-grid">
+    <div class="card">
+      <img src="assets/team.jpg" alt="Steve and Kelsey holding their Best of Airdrie awards" loading="lazy">
+      <div class="nm">Steve &amp; Kelsey <span>Father · Daughter</span></div>
     </div>
     <div>
-      <span class="eyebrow" style="color:var(--red)"><i></i>The people behind the van</span>
-      <h2 class="display" style="margin-top:14px">The father daughter duo <span class="script">you can call</span></h2>
-      <p>Steve, Kelsey and the team are known around town as Airdrie Carpet Cleaning. Fast service, friendly people, and a long run of local awards.</p>
-      <p>Over 42 years of combined experience, in every home, office and vehicle we clean.</p>
+      <h2 class="varsity">Meet the <em>team</em> behind the van</h2>
+      <p>The father daughter duo known around town as Airdrie Carpet Cleaning. Steve, Kelsey and the crew show up with fast service, friendly people and over 42 years of combined experience.</p>
       <div class="sign script">Steve, Kelsey &amp; the Team</div>
     </div>
   </div>
@@ -433,47 +484,41 @@ footer a:hover{color:#fff;text-decoration:underline}
 
 <section class="reviews" id="coupons">
   <div class="wrap">
-    <div class="sec-head">
-      <h2 class="display">Neighbours <span class="script">say it best</span></h2>
-      <p>Real feedback from Airdrie-area customers.</p>
+    <div class="sec-title">
+      <h2 class="varsity">Fan <em>mail</em></h2>
+      <p>What Airdrie-area customers say about us.</p>
     </div>
-    <div class="rev-grid">
-      <div class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><q>Excellent job! Fast service and the most friendly personnel.</q><div class="by">Justin L.</div></div>
-      <div class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><q>Quick response and fair pricing for cleaning two couches.</q><div class="by">Brandy B.</div></div>
-      <div class="rev"><div class="stars" aria-label="5 stars">★★★★★</div><q>Scheduled cleaning went great. I would book again.</q><div class="by">Marianne H.</div></div>
+    <div class="rev-wrap">
+      <div class="big-q"><div class="stars" aria-label="5 stars">★★★★★</div><q>Excellent job! Fast service and the most friendly personnel.</q><div class="by">Justin L.</div></div>
+      <div class="slips">
+        <div class="slip"><div class="stars" aria-label="5 stars">★★★★★</div><q>Quick response and fair pricing for cleaning two couches.</q><div class="by">Brandy B.</div></div>
+        <div class="slip"><div class="stars" aria-label="5 stars">★★★★★</div><q>Scheduled cleaning went great. I would book again.</q><div class="by">Marianne H.</div></div>
+      </div>
     </div>
-    <div class="rev-foot">
-      <a class="btn btn-red" href="https://g.page/airdriecarpetcleaning/review" target="_blank" rel="noopener">Leave a Google review</a>
-      <a class="btn btn-line" href="https://www.facebook.com/AirdrieCarpetCleaning" target="_blank" rel="noopener">Find us on Facebook</a>
+    <div class="rev-btns">
+      <a class="btn" href="https://g.page/airdriecarpetcleaning/review" target="_blank" rel="noopener">Leave a Google review</a>
+      <a class="btn alt" href="https://www.facebook.com/AirdrieCarpetCleaning" target="_blank" rel="noopener">Find us on Facebook</a>
     </div>
   </div>
 </section>
 
-<section class="final" id="contact">
+<section class="call" id="contact">
   <div class="wrap">
-    <div class="final-box">
-      <div class="l">
-        <h2 class="display">Ready for <span class="script">clean carpets?</span></h2>
-        <p>Get a free quote for carpet, upholstery, furnace and duct, or vehicle cleaning anywhere in Airdrie, Calgary, Cochrane and Crossfield.</p>
-        <div class="btns"><a class="btn btn-white" href="#quote">Get A Free Quote</a><a class="btn btn-line" style="border-color:#fff;color:#fff" href="tel:4039905101">403-990-5101</a></div>
-      </div>
-      <div class="r">
-        <small>Call us</small>
-        <a class="tel" href="tel:4039905101">403-990-5101</a>
-        <div class="hours">
-          <div><span>Monday to Friday</span><span>8 AM – 7 PM</span></div>
-          <div><span>Saturday</span><span>8 AM – 4 PM</span></div>
-          <div><span>Sunday</span><span>Closed</span></div>
-        </div>
-      </div>
+    <div class="k">Ready when you are</div>
+    <a class="tel" href="tel:4039905101">403-990-5101</a>
+    <div class="hours">
+      <div>Mon – Fri<span>8 AM – 7 PM</span></div>
+      <div>Saturday<span>8 AM – 4 PM</span></div>
+      <div>Sunday<span>Closed</span></div>
     </div>
+    <div class="btns"><a class="btn" href="#quote">Get A Free Quote</a></div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
+    <div class="foot">
       <div>
         <a class="plate" href="#top"><img src="assets/logo.png" alt="Airdrie Carpet Cleaning.com"></a>
         <p>Professional carpet cleaning for Airdrie, Calgary, Cochrane and Crossfield.</p>
@@ -501,22 +546,17 @@ footer a:hover{color:#fff;text-decoration:underline}
 <div class="callbar"><a href="tel:4039905101">Call now</a><a href="#quote">Free quote</a></div>
 
 <script>
-// services tabs
+// lineup accordion
 (function(){
-  var tabs=[].slice.call(document.querySelectorAll('.svc-tab'));
-  var panels=[].slice.call(document.querySelectorAll('.panel'));
-  function show(i){
-    tabs.forEach(function(t,k){t.setAttribute('aria-selected',k===i?'true':'false');t.tabIndex=k===i?0:-1});
-    panels.forEach(function(p,k){p.classList.toggle('on',k===i)});
-  }
-  tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){show(i)});
-    t.addEventListener('keydown',function(e){
-      if(e.key==='ArrowDown'||e.key==='ArrowRight'){e.preventDefault();var n=(i+1)%tabs.length;show(n);tabs[n].focus()}
-      if(e.key==='ArrowUp'||e.key==='ArrowLeft'){e.preventDefault();var n=(i-1+tabs.length)%tabs.length;show(n);tabs[n].focus()}
+  var rows=[].slice.call(document.querySelectorAll('.row'));
+  rows.forEach(function(r){
+    var b=r.querySelector('.row-btn');
+    b.addEventListener('click',function(){
+      var was=r.classList.contains('open');
+      rows.forEach(function(x){x.classList.remove('open');x.querySelector('.row-btn').setAttribute('aria-expanded','false')});
+      if(!was){r.classList.add('open');b.setAttribute('aria-expanded','true')}
     });
   });
-  show(0);
 })();
 // mobile menu
 (function(){
@@ -524,7 +564,7 @@ footer a:hover{color:#fff;text-decoration:underline}
   b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
   n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
 })();
-// quote form (front-end only: connect to the live site's quote handler or form service before launch)
+// quote form (front-end only: connect to a form handler before launch)
 (function(){
   var f=document.getElementById('quoteForm'),note=document.getElementById('formNote');
   f.addEventListener('submit',function(e){
